@@ -1,0 +1,11 @@
+# ninja log v5
+1	205	7206412506227518	CMakeFiles/Single_Layer_Perceptron.dir/main.c.obj	a1b1d0aeed4cb0d1
+207	438	7206412508358902	Single_Layer_Perceptron.exe	13b22edc41ef8adc
+1	136	7206413737146304	CMakeFiles/Single_Layer_Perceptron.dir/main.c.obj	a1b1d0aeed4cb0d1
+138	335	7206413739061492	Single_Layer_Perceptron.exe	13b22edc41ef8adc
+1	150	7206414624653735	CMakeFiles/Single_Layer_Perceptron.dir/main.c.obj	a1b1d0aeed4cb0d1
+152	367	7206414626683803	Single_Layer_Perceptron.exe	13b22edc41ef8adc
+2	164	7206415324086273	CMakeFiles/Single_Layer_Perceptron.dir/main.c.obj	a1b1d0aeed4cb0d1
+166	369	7206415326078691	Single_Layer_Perceptron.exe	13b22edc41ef8adc
+1	156	7206960754836635	CMakeFiles/Single_Layer_Perceptron.dir/main.c.obj	a1b1d0aeed4cb0d1
+157	348	7206960756620141	Single_Layer_Perceptron.exe	13b22edc41ef8adc

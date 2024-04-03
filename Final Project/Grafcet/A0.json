@@ -1,0 +1,80 @@
+[{
+		"StepNumber":0,
+		"StepType":"initial",
+		"StepAction":"action",
+		"LinkInputType":[],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[6],
+		"LinkOutputNumber":[1],
+		"Condition":["System Initialization Complete"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":1,
+		"StepType":"normal",
+		"StepAction":"Wi-Fi 管理",
+		"LinkInputType":["divergence_or"],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[0,
+		6],
+		"LinkOutputNumber":[2],
+		"Condition":["Wi-Fi Connection Online"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":2,
+		"StepType":"normal",
+		"StepAction":"Web 伺服器操作",
+		"LinkInputType":[],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[1],
+		"LinkOutputNumber":[3],
+		"Condition":["Web Server Online"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":3,
+		"StepType":"normal",
+		"StepAction":"處理用戶請求",
+		"LinkInputType":[],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[2],
+		"LinkOutputNumber":[4],
+		"Condition":["User Request Complete"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":4,
+		"StepType":"normal",
+		"StepAction":"指紋識別",
+		"LinkInputType":[],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[3],
+		"LinkOutputNumber":[5],
+		"Condition":["Fingerprint Recognition Complete"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":5,
+		"StepType":"normal",
+		"StepAction":"數據管理",
+		"LinkInputType":[],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[4],
+		"LinkOutputNumber":[6],
+		"Condition":["Database Record Update"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":6,
+		"StepType":"normal",
+		"StepAction":"結果顯示",
+		"LinkInputType":[],
+		"LinkOutputType":"divergence_or",
+		"LinkInputNumber":[5],
+		"LinkOutputNumber":[1,
+		0],
+		"Condition":["New Process",
+		" System Exit"],
+		"SubGrafcet":[]}
+	]

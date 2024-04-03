@@ -1,0 +1,44 @@
+[{
+		"StepNumber":0,
+		"StepType":"initial",
+		"StepAction":"action",
+		"LinkInputType":[],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[3],
+		"LinkOutputNumber":[1],
+		"Condition":["Module Initialization Complete"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":1,
+		"StepType":"normal",
+		"StepAction":"等待顯示命令",
+		"LinkInputType":[],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[0],
+		"LinkOutputNumber":[2],
+		"Condition":["Display Signal Retrieved"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":2,
+		"StepType":"normal",
+		"StepAction":"處理顯示內容",
+		"LinkInputType":[],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[1],
+		"LinkOutputNumber":[3],
+		"Condition":["Content Manipulation Complete"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":3,
+		"StepType":"normal",
+		"StepAction":"更新顯示器",
+		"LinkInputType":[],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[2],
+		"LinkOutputNumber":[0],
+		"Condition":["New Display Signal"],
+		"SubGrafcet":[]}
+	]

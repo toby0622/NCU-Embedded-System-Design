@@ -1,0 +1,51 @@
+[{
+		"StepNumber":0,
+		"StepType":"initial",
+		"StepAction":"",
+		"LinkInputType":[],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[2],
+		"LinkOutputNumber":[1],
+		"Condition":["Module Initialization Complete"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":1,
+		"StepType":"normal",
+		"StepAction":"Wi-Fi 連線",
+		"LinkInputType":["track"],
+		"LinkOutputType":"divergence_or",
+		"LinkInputNumber":[0,
+		2],
+		"LinkOutputNumber":[2,
+		3],
+		"Condition":["Wi-Fi Connection Online",
+		" Wi-Fi Connection Offline"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":2,
+		"StepType":"normal",
+		"StepAction":"數據上傳",
+		"LinkInputType":["divergence_or"],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[1,
+		3],
+		"LinkOutputNumber":[1],
+		"Condition":["New Session"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":3,
+		"StepType":"normal",
+		"StepAction":"重新連線",
+		"LinkInputType":["divergence_or"],
+		"LinkOutputType":"divergence_or",
+		"LinkInputNumber":[1,
+		3],
+		"LinkOutputNumber":[2,
+		3],
+		"Condition":["Wi-Fi Connection Online",
+		" Wi-Fi Connection Offline"],
+		"SubGrafcet":[]}
+	]

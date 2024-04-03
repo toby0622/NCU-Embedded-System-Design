@@ -1,0 +1,47 @@
+[{
+		"StepNumber":0,
+		"StepType":"initial",
+		"StepAction":"action",
+		"LinkInputType":[],
+		"LinkOutputType":"divergence_or",
+		"LinkInputNumber":[3],
+		"LinkOutputNumber":[1,
+		2],
+		"Condition":["Module Initialization Complete",
+		"Module Initialization Complete"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":1,
+		"StepType":"normal",
+		"StepAction":"新增紀錄",
+		"LinkInputType":[],
+		"LinkOutputType":"convergence_or",
+		"LinkInputNumber":[0],
+		"LinkOutputNumber":[3],
+		"Condition":["Record Update"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":2,
+		"StepType":"normal",
+		"StepAction":"刪除紀錄",
+		"LinkInputType":[],
+		"LinkOutputType":"convergence_or",
+		"LinkInputNumber":[0],
+		"LinkOutputNumber":[3],
+		"Condition":["Record Update"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":3,
+		"StepType":"normal",
+		"StepAction":"查詢紀錄",
+		"LinkInputType":["convergence_or"],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[1,
+		2],
+		"LinkOutputNumber":[0],
+		"Condition":["New Process"],
+		"SubGrafcet":[]}
+	]
